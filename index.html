@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="title">Dev Jose Sanchez</title>
+
+    <script src="js/init.js"></script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome (free) for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- favicons
+    ================================================== -->
+   
+    <link rel="icon" type="image/png" sizes="32x32" href="images/perfil.jpg">
+    
+    
+
+</head>
+
+
+<body id="top">
+
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo.jpg" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span data-i18n="menu">Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro" data-i18n="nav_intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about" data-i18n="nav_about">About</a></li>
+                        <li><a class="smoothscroll" href="#works" data-i18n="nav_works">Works</a></li>
+                        <li><a class="smoothscroll" href="#footer" data-i18n="nav_contact">Contact</a></li>
+                        <div class="lang-toggle" aria-hidden="false">
+                        <button id="btn-es" class="btn-lang" type="button" title="Español" aria-label="Cambiar a español">ES</button>
+                        <button id="btn-en" class="btn-lang" type="button" title="English" aria-label="Switch to English">EN</button>
+                    </div>
+                    </ul> <!-- s-header__menu-links -->    
+
+                    <!-- Language toggle (moved into nav for proper placement) -->
+                    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    
+                    <div class="s-intro__content-text">
+
+                        <div id="intro-pretitle" class="s-intro__content-pretitle text-pretitle" data-i18n="pretitle"><!--Rellena JSON--></div>
+                        <h1 id="intro-title" class="s-intro__content-title" data-i18n="intro_title">
+                        <!--Rellena JSON-->
+                        </h1>                            
+
+                        
+
+                        <div class="s-intro__content-btns">
+                            <a id="btn-more-about" class="smoothscroll btn" href="#about" data-i18n="btn_more_about"><!--Rellena JSON--></a>
+                            <a  class="btn btn--stroke" href="https://wa.link/wimmoi" target="_blank" rel="noopener noreferrer" data-i18n="btn_get_in_touch"><!--Rellena JSON--></a>
+                        </div> <!-- s-intro__content-btns -->   
+
+                    </div> <!-- s-intro__content-text -->                     
+                    
+                </div> <!-- s-intro__content-inner -->  
+            </div> <!-- s-intro__content -->
+
+            <ul class="s-intro__social social-list">
+                
+
+                <li>
+                    <a href="https://wa.link/wimmoi" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        <span class="u-screen-reader-text" data-i18n="social_whatsapp">WhatsApp</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/webmark.studio_/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="u-screen-reader-text" data-i18n="social_instagram">Instagram</span>
+                    </a>
+                </li>
+                 
+            </ul> <!-- end s-intro__social -->
+
+            <div class="s-intro__content-media">                               
+                <img src="images/perfil.jpg" alt="Imagen Perfil">
+            </div> <!-- s-intro__content-media -->                
+
+                <div class="s-intro__btn-download">
+                <a class="btn btn--stroke" href="images/cvjosea.pdf" target="_blank" data-i18n="get_my_cv"><!--Rellena JSON--></a>
+            </div> <!-- end s-intro__btn-download -->
+            
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text" data-i18n="scroll_down">Scroll Down</span>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
+
+            <div class="row s-about__content">
+                <div class="column xl-12">    
+                    
+                    <div class="section-header" data-num="01">
+                        <h2 id="about-title" class="text-display-title" data-i18n="about_title">About Me.</h2>
+                    </div> <!-- end section-header -->
+
+                    <p id="about-p1" data-i18n="about_p1" class="attention-getter">
+                    </p>
+
+                    <p id="about-p2" class="attention-getter" data-i18n="about_p2">
+                    </p>
+
+                
+                        <div class="grid-list-items__item s-about__block s-about__skills">
+                            <h4 class="s-about__block-title" data-i18n="skills_title">Skills</h4>
+
+                            <div class="skills-grid" aria-hidden="false">
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--html" aria-hidden="true"><i class="fab fa-html5" aria-hidden="true"></i></div>
+                                    <div class="skill-name" data-i18n="skill_html">HTML</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--css" aria-hidden="true"><i class="fab fa-css3-alt" aria-hidden="true"></i></div>
+                                    <div class="skill-name" data-i18n="skill_css">CSS</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--tailwind" aria-hidden="true">
+                                        <img src="images/icons/tailwind-css.svg" alt="Tailwind CSS" />
+                                    </div>
+                                    <div class="skill-name" data-i18n="skill_tailwind">TailwindCSS</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--js" aria-hidden="true"><i class="fab fa-js" aria-hidden="true"></i></div>
+                                    <div class="skill-name" data-i18n="skill_js">JavaScript</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--typescript" aria-hidden="true">
+                                        <img src="images/icons/typescipt.png" alt="TypeScript" />
+                                    </div>
+                                    <div class="skill-name" data-i18n="skill_typescript">TypeScript</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--git" aria-hidden="true"><i class="fab fa-git-alt" aria-hidden="true"></i></div>
+                                    <div class="skill-name" data-i18n="skill_git">Git / GitHub</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--react" aria-hidden="true"><i class="fab fa-react" aria-hidden="true"></i></div>
+                                    <div class="skill-name" data-i18n="skill_react">React</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--node" aria-hidden="true"><i class="fab fa-node-js" aria-hidden="true"></i></div>
+                                    <div class="skill-name" data-i18n="skill_node">NodeJS</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--sql" aria-hidden="true"><i class="fas fa-database" aria-hidden="true"></i></div>
+                                    <div class="skill-name" data-i18n="skill_sql">SQL / MySQL</div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-icon skill-icon--shopify" aria-hidden="true"><i class="fab fa-shopify" aria-hidden="true"></i></div>
+                                    <div class="skill-name" data-i18n="skill_shopify">Shopify Liquid</div>
+                                </div>
+
+                            </div>
+                        </div> <!--end s-about__block -->
+
+                    </div> <!-- grid-list-items -->
+
+                </div> <!--end column -->
+            </div> <!--end s-about__content -->
+            
+        </section> <!-- end s-about -->   
+
+
+
+        <!-- # works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title" data-i18n="selected_works">Selected Works.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row folio-entries">
+
+                <div class="column entry">
+                    <a href="images/folio/1.jpg" class="entry__link glightbox" data-glightbox="description: .entry__desc-01">
+                        <div class="entry__thumb">
+                            <img src="images/folio/1.jpg"  alt="Proyects">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title" data-i18n="title1"></h4>
+                        
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-01" >
+                        <p data-i18n="description1">
+                       
+                      
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/2.jpg" class="entry__link glightbox" data-glightbox="description: .entry__desc-02">
+                        <div class="entry__thumb">
+                            <img src="images/folio/2.jpg"  alt="Proyects">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title" data-i18n="title2"> </h4>
+                            
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-02">
+                        <p data-i18n="description2">
+                        
+                     
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/3.jpg" class="entry__link glightbox" data-glightbox="description: .entry__desc-03">
+                        <div class="entry__thumb">
+                            <img src="images/folio/3.jpg" alt="Proyects">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title" data-i18n="title3"> </h4>
+                            
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-03">
+                        <p data-i18n="description3">
+                     
+                       
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/4.jpg" class="entry__link glightbox" data-glightbox="description: .entry__desc-04">
+                        <div class="entry__thumb">
+                            <img src="images/folio/4.jpg"  alt="Proyects">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title" data-i18n="title4"> </h4>
+                            
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-04">
+                        <p data-i18n="description4">
+                        
+                      
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/5.jpg" class="entry__link glightbox" data-glightbox="description: .entry__desc-05">
+                        <div class="entry__thumb">
+                            <img src="images/folio/5.jpg" alt="Proyects">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title" data-i18n="title5"> </h4>
+                            
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-05">
+                        <p data-i18n="description5">
+                       
+                        
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="images/folio/6.jpg" class="entry__link glightbox" data-glightbox="description: .entry__desc-06">
+                        <div class="entry__thumb">
+                            <img src="images/folio/6.jpg" alt="Proyects">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title" data-i18n="title6"> </h4>
+                            
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-06">
+                        <p data-i18n="description6">
+                     
+
+                        </p>
+                    </div>
+                </div> <!-- entry --> 
+
+            </div> <!-- folio entries -->
+
+
+            <div class="row s-testimonials">
+                <div class="column xl-12">
+
+                    <h3 class="s-testimonials__header" data-i18n="hear_testimonials"> </h3>
+    
+                    <div class="swiper-container s-testimonials__slider">
+    
+                        <div class="swiper-wrapper">
+
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/perfil.webp" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong data-i18n="testimonial_1_name">Marta López</strong>
+                                        <span data-i18n="testimonial_1_role">Product Manager, Lumen Retail</span>
+                                    </cite>
+                                </div>
+                                <p data-i18n="testimonial_1_text">
+                                Jose delivered a clean, responsive front-end for our e-commerce site. He used Tailwind and React components to speed up development, and his Shopify Liquid work noticeably improved our checkout flow. Highly recommended for front-end implementations.
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+            
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/perfil.webp" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong data-i18n="testimonial_2_name">Samuel Turner</strong>
+                                        <span data-i18n="testimonial_2_role">Lead Engineer, BrightWorks</span>
+                                    </cite>
+                                </div>
+                                <p data-i18n="testimonial_2_text">
+                                As a junior developer Jose showed rapid learning and great attention to accessibility and performance. He collaborated well with senior engineers and delivered stable, testable components on schedule.
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+            
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/perfil.webp" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong data-i18n="testimonial_3_name">Lucía Fernández</strong>
+                                        <span data-i18n="testimonial_3_role">CTO, Verde Studio</span>
+                                    </cite>
+                                </div>
+                                <p data-i18n="testimonial_3_text">
+                                His knowledge of SQL and Git helped us stabilize data flows and speed up deployments. Jose is proactive, documents his work, and applies feedback quickly.
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+    
+                            <div class="s-testimonials__slide swiper-slide">
+                                <div class="s-testimonials__author">
+                                    <img src="images/avatars/perfil.webp" alt="Author image" class="s-testimonials__avatar">
+                                    <cite class="s-testimonials__cite">
+                                        <strong data-i18n="testimonial_4_name">Daniel Kim</strong>
+                                        <span data-i18n="testimonial_4_role">Founder, PixelForge</span>
+                                    </cite>
+                                </div>
+                                <p data-i18n="testimonial_4_text">
+                                Fast turnaround, clear communication, and clean code. Jose integrates feedback and iterates quickly — great to work with on medium-sized projects.
+                                </p>
+                            </div> <!-- end s-testimonials__slide -->
+        
+                        </div> <!-- end swiper-wrapper -->
+    
+                        <div class="swiper-pagination"></div>
+    
+                    </div> <!-- end swiper-container -->
+    
+                </div> <!-- end column -->
+            </div> <!-- end s-testimonials -->
+
+        </section> <!-- end s-works --> 
+
+
+        <!-- # numbers
+        ================================================== -->
+        <section id="numbers" class="s-numbers">
+
+            <div class="row counter-items">
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        4
+                        <span>+</span>
+                    </div>
+                    <h5 data-i18n="happy_customers">Happy Customers</h5>
+                    <p data-i18n="numbers_happy_customers_text">Worked with 12+ small businesses and startups, helping implement front-end improvements and launch simple marketing pages.</p>
+                </div> <!-- end counter-items__item -->
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        14
+                        <span>+</span>
+                    </div>
+                    <h5 data-i18n="projects_completed">Projects Completed</h5>
+                    <p data-i18n="numbers_projects_completed_text">18+ small projects: landing pages, feature components and simple Shopify tweaks — focused on clarity, responsiveness and accessibility.</p>
+                </div> <!-- end counter-items__item -->
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        8k
+                        <span>+</span>
+                    </div>
+                    <h5 data-i18n="lines_of_code">Lines of Code</h5>
+                    <p data-i18n="numbers_lines_of_code_text">8k+ lines of project code (HTML/CSS/JS), mostly modular components and utility classes, maintained in Git repositories.</p>
+                </div> <!-- end counter-items__item -->
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        12
+                        <span>+</span>
+                    </div>
+                    <h5 data-i18n="positive_feedback">Positive Feedback</h5>
+                    <p data-i18n="numbers_positive_feedback_text">30+ positive notes from clients and mentors praising punctuality, clarity of communication and eagerness to learn.</p>
+                </div> <!-- end counter-items__item -->
+
+            </div>  <!-- end counter-items -->
+
+        </section> <!-- end s-numbers -->
+
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title" data-i18n="footer_title">Get In Touch.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
+                    <p class="attention-getter" data-i18n="pfooter">
+                   
+                    </p>               
+                </div> <!-- end section-footer__about -->
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5 data-i18n="follow_me">Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="https://www.instagram.com/webmark.studio_/" target="_blank">Instagram</a></li>
+                                <li><a href="https://wa.link/wimmoi" target="_blank">WhatsApp</a></li>
+                               
+                                
+                                
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5 data-i18n="contact_me">Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:#0">webmarkstudio@gmail.com</a></li>
+                                <li><a href="tel:+584121022145">+58 412 1022145</a></li>
+                            </ul> 
+                        </div>
+                    </div>                    
+                </div> <!-- end section-footer__site-links -->
+
+            </div> <!-- end section-footer__content -->
+
+
+            <div class="row s-footer__buttons">
+               
+                <div class="column xl-6 tab-12">
+                    <a href="https://wa.link/wimmoi" target="_blank" class="btn btn--primary btn--large u-fullwidth" data-i18n="message_me">Message Me</a>
+                </div>
+          
+                <div class="column xl-6 tab-12">                    
+                    <a href="images/cvjosea.pdf" target="_blank" class="btn btn--stroke btn--large u-fullwidth" data-i18n="get_my_cv">Get My CV</a>
+                </div>
+            
+            </div> <!-- end section-footer__buttons -->              
+            
+            <div class="row s-footer__bottom">
+                
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                       
+                        <li>
+                            <a href="https://wa.link/wimmoi" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        <span class="u-screen-reader-text" data-i18n="social_whatsapp">WhatsApp</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/webmark.studio_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                <span class="u-screen-reader-text" data-i18n="social_instagram">Instagram</span>
+                            </a>
+                        </li>
+                       
+                    </ul> 
+                </div> <!-- end section-footer__social -->
+
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+                        <span data-i18n="copyright"></span> 
+                        
+                    </p>
+                </div>
+
+            </div> <!-- end section-footer__bottom -->          
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>                                
+                <span data-i18n="back_to_top">Back To Top</span>   
+            </div> <!-- end ss-go-top -->
+            
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/i18n.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
