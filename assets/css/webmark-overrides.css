@@ -320,6 +320,7 @@ a:hover {
 }
 
 .wm-intro-footnote {
+	display: none ;
 	margin: 1.75em auto 0 auto;
 	max-width: 58rem;
 	padding: 0.85em 1.1em;
@@ -1473,3 +1474,4 @@ textarea::placeholder {
 #footer .icons a:hover {
 	color: var(--wm-white);
 }
+
